@@ -15,13 +15,12 @@ class CalculatorSpekSpec : Spek({
             it("should calculate the sum of two numbers") {
                 val sum = calculator.add(2, 4)
                 Assertions.assertThat(sum).isEqualTo(6)
-
             }
         }
         describe("subtraction") {
             it("should calculate the difference of two numbers") {
                 val difference = calculator.subtract(4, 2)
-                assertEquals(2, difference)
+                Assertions.assertThat(difference).isEqualTo(2)
             }
         }
     }
